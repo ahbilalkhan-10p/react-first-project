@@ -3,17 +3,56 @@ import './App.css'
 
 import UserInput from './Userinput/UserInput';
 import UserOutput from './Useroutput/UserOutput';
+import Person from "./Person/Person";
+
 
 class App extends Component {
 
     state = {
-        username: 'ahbilalkhan'
-    }
+        persons : [
+            {id: 'per1', name: 'MAX', age: 23},
+            {id: 'per2', name: 'Ali', age: 24},
+            {id: 'per3', name: 'AHMAD', age: 27}
+        ],
+        otherStates: 'Some other State',
+        showPersons : false
+    };
 
-    usernameChangeHandler = (event) => {
-        this.setState({username: event.target.value})
-    }
+    //     nameChangeHandler = (event) => {
+    //     this.setState({
+    //         persons:[
+    //
+    //         ] event.target.value});
+    // };
+
+    deletePersonHandler = (personIndex) => {
+        const persons = this.state.persons;
+        persons.splice(personIndex,1);
+        this.setState({persons: persons})
+    };
+
+    togglePersonsHandler = () => {
+        const doesShow = this.state.showPersons;
+        this.setState({showPersons: !doesShow});
+    };
+
     render(){
+        let persons = null;
+        if(this.state.showPersons) {
+            persons = (
+                <div>
+                    {
+                        this.state.persons.map((person, index) =>{
+                            return <Person
+                                click={()=>this.deletePersonHandler(index)}
+                                name={person.name}
+                                age={person.age}
+                                key={person.id}></Person>
+                        })
+                    }
+                </div>
+            );
+        }
         return(
             <div className="App">
                 <ol>
@@ -21,15 +60,13 @@ class App extends Component {
                 </ol>
                 <UserInput changed={this.usernameChangeHandler}
                 currentName={this.state.username}/>
-                <UserOutput userName={this.state.username}/>
-                <UserOutput userName="Bilal"/>
-                <UserOutput userName="Khan"/>
-
-                
-
+                <button
+                    onClick={this.togglePersonsHandler}>Toggle Persons</button>
+                {persons}
             </div>
-        )
-    };
+
+        );
+    }
 }
 
 export default App;
