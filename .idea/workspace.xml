@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21a404bf-8984-4af7-816b-f079344cae8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="21a404bf-8984-4af7-816b-f079344cae8f" name="Default Changelist" comment="Adding Radium and using it for dynamic styling and media queries">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person/Person.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/Person.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +15,11 @@
     </execution>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1nhg8cBbUcdX0yfHkSiMR4OMKPr" />
@@ -49,25 +51,79 @@
       <workItem from="1613661874779" duration="6925000" />
       <workItem from="1614346508205" duration="67000" />
       <workItem from="1614346600528" duration="1879000" />
-      <workItem from="1614860680921" duration="1003000" />
+      <workItem from="1614860680921" duration="1683000" />
+      <workItem from="1614927595464" duration="1797000" />
+      <workItem from="1614948451458" duration="604000" />
+      <workItem from="1615547756215" duration="4852000" />
     </task>
+    <task id="LOCAL-00001" summary="toggle persons on/off">
+      <created>1614861745311</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614861745311</updated>
+    </task>
+    <task id="LOCAL-00002" summary="setting style dynamically">
+      <created>1615549042506</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615549042506</updated>
+    </task>
+    <task id="LOCAL-00003" summary="setting Class Names Dynamically">
+      <created>1615550240652</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615550240652</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adding Radium and using it for dynamic styling and media queries">
+      <created>1615555928381</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615555928381</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="toggle persons on/off" />
+    <MESSAGE value="setting style dynamically" />
+    <MESSAGE value="setting Class Names Dynamically" />
+    <MESSAGE value="Adding Radium and using it for dynamic styling and media queries" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Radium and using it for dynamic styling and media queries" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="523" y="36" width="864" height="989" key="CommitChangelistDialog2" timestamp="1613670761980">
+    <state x="353" y="36" width="864" height="989" key="CommitChangelistDialog2" timestamp="1615555928300">
       <screen x="0" y="27" width="1920" height="1001" />
     </state>
     <state x="523" y="36" width="864" height="989" key="CommitChangelistDialog2/0.27.1920.1001/1920.0.1920.1080@0.27.1920.1001" timestamp="1613670761980" />
+    <state x="353" y="36" width="864" height="989" key="CommitChangelistDialog2/0.27.1920.1001@0.27.1920.1001" timestamp="1615555928300" />
+    <state x="199" y="36" width="881" height="989" key="CommitChangelistDialog2/1080.840.1920.1080/0.27.1080.1001@0.27.1080.1001" timestamp="1614861745223" />
     <state x="743" y="285" width="424" height="491" key="FileChooserDialogImpl" timestamp="1614351477527">
       <screen x="0" y="27" width="1920" height="1001" />
     </state>
     <state x="743" y="285" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1001@0.27.1920.1001" timestamp="1614351477527" />
+    <state x="666" y="235" width="578" height="591" key="MultipleFileMergeDialog" timestamp="1615555854674">
+      <screen x="0" y="27" width="1920" height="1001" />
+    </state>
+    <state x="666" y="235" width="578" height="591" key="MultipleFileMergeDialog/0.27.1920.1001@0.27.1920.1001" timestamp="1615555854674" />
+    <state x="480" y="259" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1615555933327">
+      <screen x="0" y="27" width="1920" height="1001" />
+    </state>
+    <state x="480" y="259" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1001@0.27.1920.1001" timestamp="1615555933327" />
+    <state x="270" y="259" width="800" height="543" key="Vcs.Push.Dialog.v2/1080.840.1920.1080/0.27.1080.1001@0.27.1080.1001" timestamp="1614861755414" />
     <state x="614" y="355" key="com.intellij.ide.util.TipDialog" timestamp="1614346617332">
       <screen x="0" y="27" width="1920" height="1001" />
     </state>
     <state x="614" y="355" key="com.intellij.ide.util.TipDialog/0.27.1920.1001@0.27.1920.1001" timestamp="1614346617332" />
+    <state x="686" y="159" width="537" height="743" key="git4idea.branch.GitSmartOperationDialog" timestamp="1615555842305">
+      <screen x="0" y="27" width="1920" height="1001" />
+    </state>
+    <state x="686" y="159" width="537" height="743" key="git4idea.branch.GitSmartOperationDialog/0.27.1920.1001@0.27.1920.1001" timestamp="1615555842305" />
   </component>
 </project>
