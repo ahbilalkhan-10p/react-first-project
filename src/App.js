@@ -63,11 +63,20 @@ class App extends Component {
             );
             style.backgroundColor = 'red';
         }
+
+        const classes= [];
+        if (this.state.persons.length <=2) {
+            classes.push('red');
+        }
+        if (this.state.persons.length <=1) {
+            classes.push('bold');
+        }
         return(
             <div className="App">
                 <ol>
                     <li>Create two user Components Input and Output</li>
                 </ol>
+                <p className={classes.join(' ')}> Listing Three Persons</p>
                 <UserInput changed={this.usernameChangeHandler}
                 currentName={this.state.username}/>
                 <button
