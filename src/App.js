@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css'
+import Radium, { StyleRoot } from 'radium';
+
 
 import UserInput from './Userinput/UserInput';
 import UserOutput from './Useroutput/UserOutput';
@@ -44,6 +46,10 @@ class App extends Component {
             padding: '6px',
             border: '1px solid blue',
             cursor: 'pointer',
+            ':hover': {
+                backgroundColor: 'lightgreen',
+                color: 'black'
+            }
         };
 
         let persons = null;
@@ -62,22 +68,37 @@ class App extends Component {
                 </div>
             );
             style.backgroundColor = 'red';
+            style[':hover'] = {
+                backgroundColor: 'salmon',
+                color: 'black'
+            }
+        }
+
+        const classes= [];
+        if (this.state.persons.length <=2) {
+            classes.push('red');
+        }
+        if (this.state.persons.length <=1) {
+            classes.push('bold');
         }
         return(
-            <div className="App">
-                <ol>
-                    <li>Create two user Components Input and Output</li>
-                </ol>
-                <UserInput changed={this.usernameChangeHandler}
-                currentName={this.state.username}/>
-                <button
-                    style={style}
-                    onClick={this.togglePersonsHandler}>Toggle Persons</button>
-                {persons}
-            </div>
+            <StyleRoot>
+                <div className="App">
+                    <ol>
+                        <li>Create two user Components Input and Output</li>
+                    </ol>
+                    <p className={classes.join(' ')}> Listing Three Persons</p>
+                    <UserInput changed={this.usernameChangeHandler}
+                    currentName={this.state.username}/>
+                    <button
+                        style={style}
+                        onClick={this.togglePersonsHandler}>Toggle Persons</button>
+                    {persons}
+                </div>
+            </StyleRoot>
 
         );
     }
 }
 
-export default App;
+export default Radium(App);
