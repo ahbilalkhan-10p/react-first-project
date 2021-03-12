@@ -37,6 +37,15 @@ class App extends Component {
     };
 
     render(){
+
+        const style = {
+            backgroundColor: 'green',
+            color: 'white',
+            padding: '6px',
+            border: '1px solid blue',
+            cursor: 'pointer',
+        };
+
         let persons = null;
         if(this.state.showPersons) {
             persons = (
@@ -52,6 +61,7 @@ class App extends Component {
                     }
                 </div>
             );
+            style.backgroundColor = 'red';
         }
         return(
             <div className="App">
@@ -61,6 +71,7 @@ class App extends Component {
                 <UserInput changed={this.usernameChangeHandler}
                 currentName={this.state.username}/>
                 <button
+                    style={style}
                     onClick={this.togglePersonsHandler}>Toggle Persons</button>
                 {persons}
             </div>
