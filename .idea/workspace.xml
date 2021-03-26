@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="21a404bf-8984-4af7-816b-f079344cae8f" name="Default Changelist" comment="Adding Radium and using it for dynamic styling and media queries">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person/Person.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/Person.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +59,7 @@
       <workItem from="1614927595464" duration="1797000" />
       <workItem from="1614948451458" duration="604000" />
       <workItem from="1615547756215" duration="4852000" />
+      <workItem from="1616743860581" duration="353000" />
     </task>
     <task id="LOCAL-00001" summary="toggle persons on/off">
       <created>1614861745311</created>
