@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css'
-import Radium, { StyleRoot } from 'radium';
-
+import styled from 'styled-components'
 
 import UserInput from './Userinput/UserInput';
 import UserOutput from './Useroutput/UserOutput';
@@ -82,7 +81,6 @@ class App extends Component {
             classes.push('bold');
         }
         return(
-            <StyleRoot>
                 <div className="App">
                     <ol>
                         <li>Create two user Components Input and Output</li>
@@ -95,10 +93,8 @@ class App extends Component {
                         onClick={this.togglePersonsHandler}>Toggle Persons</button>
                     {persons}
                 </div>
-            </StyleRoot>
-
         );
     }
 }
 
-export default Radium(App);
+export default App;
