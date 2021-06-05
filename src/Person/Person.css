@@ -6,3 +6,15 @@
     padding: 16px;
     text-align: center;
 }
+
+.bold {
+    font-weight: bold;
+}
+
+.button {
+    background-color: green;
+    color: white;
+    padding: 6px;
+    border: 1px solid blue;
+    cursor: pointer;
+}
